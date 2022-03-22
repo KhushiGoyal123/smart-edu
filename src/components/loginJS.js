@@ -1,8 +1,28 @@
-const inputs = document.querySelectorAll(".input-field");
+import { useEffect } from "react";
+
+// const inputs = document.querySelectorAll(".input-field");
 const toggle_btn = document.querySelectorAll(".toggle");
 const main = document.querySelector("main");
 const bullets = document.querySelectorAll(".bullets span");
 const images = document.querySelectorAll(".image");
+
+
+const [inputs, setInputs] = useState(document.querySelectorAll(".input-field"));
+
+
+const [toggle, setToggle] = useState(false);
+const handleClick = (e) => {
+    setInputs = e.target.value; 
+}
+
+useEffect(() => {
+
+}, [toggle_btn]);
+// const toggle_btn = (e) => {
+   
+// } 
+
+
 
 inputs.forEach(inp =>{
     inp.addEventListener("focus", () =>{

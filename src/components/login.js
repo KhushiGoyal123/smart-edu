@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import './login.css';
 
 import logo from '../images/logo.png';
@@ -8,15 +8,16 @@ import image3 from '../images/image3.png';
 
 
 const Login = () => {
-    const [inputs, setInputs] = useState(false);
-    const [toggle, setToggle] = useState(false);
-    const handleClick = (e) => {
-        setInputs = e.target.value; 
-    }
+//     const [inputs, setInputs] = useState(document.querySelectorAll(".input-field"));
 
-    const toggle_btn = (e) => {
-       
-    }
+//     useEffect(()=>{
+      
+//     }, [inputs]);
+
+// const [toggle, setToggle] = useState(false);
+// const handleClick = (e) => {
+//     setInputs = e.target.value; 
+// }
 
   return (
       

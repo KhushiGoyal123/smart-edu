@@ -362,3 +362,64 @@ nav {
 .all:hover{
     background-color: #e9623c;
 }
+
+.gradient{
+    background-image: linear-gradient(to right bottom, #793ea6, #7538b4, #6d33c3, #612fd3, #4c2de3);
+    height: 600px;
+    margin-top: 10px;
+}
+
+.gradient .text{
+    font-size: 35px;
+    height: 4.5rem;
+    color: white;
+    font-weight: 600;
+    padding: 10px 10px 10px 40px;
+}
+
+.gradient-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(600px - 4.5rem);
+}
+
+.special-container{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(600px - 4.5rem);
+    flex-wrap: wrap;
+}
+
+.special-container .event-card{
+    width: 40%;
+    height: 200px;
+    margin: 15px 0 20px 0;
+    border: 1px solid rgb(194, 182, 182);
+    border-left: 5px solid #000000;
+    transition: 0.3s;
+    display: flex;
+    background-color: #ebe7e4;
+}
+
+.special-container .event-card:hover{
+    border-left: 6px solid #000000;
+    border-right: 15px solid #000000;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.special-container .event-card .event-image{
+    min-width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.special-container .event-card .event-image img{
+    height: 150px;
+    width: 150px;
+}

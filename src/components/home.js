@@ -7,11 +7,11 @@ import img3 from'../images/3.jpeg';
 import img4 from'../images/4.jpeg';
 import img5 from'../images/5.jpeg';
 import img6 from'../images/6.jpeg';
+import img7 from'../images/7.jpeg';
+import img8 from'../images/8.jpeg';
+import img9 from'../images/9.jpeg';
+import img10 from'../images/10.jpeg';
 import Login from './login';
-import {
-    Link,
-    Route,
-  } from "react-router-dom";
   
 
 const Home = () => {
@@ -161,13 +161,74 @@ const Home = () => {
                         <li>College Fest</li>
                     </ul>
                 </div>
+                </div>
+                </div>
+                </div>
+
+                <div class="container-btn">
+        <button class="all">Watch all events</button>
+    </div>
+
+    <div class="gradient">
+        <h1 class="text">Featured Events</h1>
+        <div class="gradient-flex">
+            <div class="special-container">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src={img7} alt="image7" />
+                    </div>
+                    <div class="event-details">
+                        <h2>Electro Beats - Groove with Beats</h2>
+                        <h4 class="date">Date: 24/3/2022 - 26/3/2022</h4>
+                        <ul>
+                            <li>Offline</li>
+                            <li>College Fest</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src={img8} alt="image8" />
+                    </div>
+                    <div class="event-details">
+                        <h2>Business Summit - For MBA Graduates</h2>
+                        <h4 class="date">Date: 24/3/2022 - 26/3/2022</h4>
+                        <ul>
+                            <li>Offline</li>
+                            <li>College Fest</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src={img9} alt="image9" />
+                    </div>
+                    <div class="event-details">
+                        <h2>SARAS - For music lovers</h2>
+                        <h4 class="date">Date: 24/3/2022 - 26/3/2022</h4>
+                        <ul>
+                            <li>Offline</li>
+                            <li>College Fest</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src={img10} alt="image10" />
+                    </div>
+                    <div class="event-details">
+                        <h2>JU Rhythm 22 - Beats of Imagination</h2>
+                        <h4 class="date">Date: 24/3/2022 - 26/3/2022</h4>
+                        <ul>
+                            <li>Offline</li>
+                            <li>College Fest</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div className="container-btn">
-        <button className="all">Watch all events</button>
-    </div>
-
+    <script src="../js/login.js"></script>
         </>
     )
 }
