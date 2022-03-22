@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+body, input, button{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+.container{
+    width: 90%;
+    height: 5rem;
+    display: flex;
+}
+
+.container .logo{
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .logo img{
+    width: 55px;
+    padding: 0 5px;
+}
+
+.container .logo h3{
+    font-size: 22px;
+    padding: 0 5px;
+}
+
+.container .nav-items{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .nav-items h4{
+    font-weight: 400;
+    margin: 0 15px 0 0;
+    padding: 0 10px;
+}
+
+.container .nav-items h4::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #8371fd;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.container .nav-items h4:hover::after{
+    width: 100%;
+}
+
+.container .nav-items h4:hover{
+    color: #8371fd;
+    cursor: pointer;
+}
+
+
+.container .sign{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .sign button{
+    padding: 15px 20px;
+    margin: 0 0 0 20px;
+    background-color: #8371fd;
+    border-radius: 28px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    border: none;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.container .sign button:hover{
+    color: #8371fd;
+    background-color: white;
+}
+
+.container .sign button.ambassador{
+    /* background-color: white; */
+    background-color: #FF8C6B;
+    /* color: #151111; */
+}
+
+.container .sign button.ambassador:hover{
+    color: white;
+    background-color: #e9623c;
+}
