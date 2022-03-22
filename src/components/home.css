@@ -42,6 +42,10 @@ nav {
     font-size: 22px;
     padding: 0 5px;
 }
+.container .logo h3 a{
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .container .nav-items{
     width: 55%;
@@ -75,7 +79,6 @@ nav {
     cursor: pointer;
 }
 
-
 .container .sign{
     width: 30%;
     display: flex;
@@ -83,7 +86,7 @@ nav {
     align-items: center;
 }
 
-.container .sign button{
+.container .sign a{
     padding: 15px 20px;
     margin: 0 0 0 20px;
     background-color: #8371fd;
@@ -96,18 +99,18 @@ nav {
     line-height: 1;
 }
 
-.container .sign button:hover{
+.container .sign a:hover{
     color: #8371fd;
     background-color: white;
 }
 
-.container .sign button.ambassador{
+.container .sign a.ambassador{
     /* background-color: white; */
     background-color: #FF8C6B;
     /* color: #151111; */
 }
 
-.container .sign button.ambassador:hover{
+.container .sign a.ambassador:hover{
     color: white;
     background-color: #e9623c;
 }

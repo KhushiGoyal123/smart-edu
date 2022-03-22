@@ -16,10 +16,12 @@ const Login = () => {
             <div className="inner-box">
                 <div className="forms-wrap">
                     <form action="index.html" autocomplete="off" className="sign-in-form">
-                        <div className="logo">
-                            <img src={logo} alt="nex" />
-                            <h3>NEX</h3>
+                        <a href='/' className='logolink'><div className="logo">
+                        <img src={logo} alt="logo" />
+                        <h3>NEX</h3>
                         </div>
+                        </a>
+                      
                         <div className="heading">
                             <h2>Welcome Back</h2>
                             <h6>Not registered yet?</h6>
