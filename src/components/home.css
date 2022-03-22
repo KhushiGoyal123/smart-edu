@@ -5,10 +5,12 @@
 *::before {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body, input, button{
     font-family: 'Poppins', sans-serif;
+    /* background-color: #FF8C6B; */
 }
 
 nav {
@@ -21,9 +23,9 @@ nav {
 }
 
 .container{
+    display: flex;
     width: 90%;
     height: 5rem;
-    display: flex;
 }
 
 .container .logo{
@@ -36,14 +38,12 @@ nav {
 .container .logo img{
     width: 55px;
     padding: 0 5px;
+    cursor: pointer;
 }
 
 .container .logo h3{
     font-size: 22px;
     padding: 0 5px;
-}
-.container .logo h3 a{
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -54,7 +54,7 @@ nav {
     align-items: center;
 }
 
-.container .nav-items h4{
+.container .nav-items h4 {
     font-weight: 400;
     margin: 0 15px 0 0;
     padding: 0 10px;
@@ -74,7 +74,7 @@ nav {
     width: 100%;
 }
 
-.container .nav-items h4:hover{
+.container .nav-items h4:hover a{
     color: #8371fd;
     cursor: pointer;
 }
@@ -92,25 +92,268 @@ nav {
     background-color: #8371fd;
     border-radius: 28px;
     color: white;
-    text-decoration: none;
     transition: 0.3s;
     border: none;
     font-size: 14px;
     line-height: 1;
+    text-decoration: none;
 }
 
 .container .sign a:hover{
     color: #8371fd;
+    text-decoration: none;
     background-color: white;
+    cursor: pointer;
 }
 
-.container .sign a.ambassador{
+.container .sign a.orange{
     /* background-color: white; */
+    text-decoration: none;
     background-color: #FF8C6B;
     /* color: #151111; */
 }
 
-.container .sign a.ambassador:hover{
+.container .sign a.orange:hover{
     color: white;
+    background-color: #e9623c;
+    text-decoration: none;
+}
+
+.maindiv .container{
+    display: flex;
+    margin: 20px auto 3rem auto;
+    justify-content: center;
+    align-items: center;
+    /* width: 90%; */
+    height: 400px;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 43%; */
+    background-image: url("../images/carousel1.jpeg");
+    background-size: 100% 100%;
+    /* transform: translate(-50%, -50%); */
+    animation: slider 9s infinite;
+    border: 1px solid #8371fd;
+    border-radius: 10px;
+}
+
+@keyframes slider{
+    0%{
+        background-image: url("../images/carousel1.jpeg");
+    }
+    33%{
+        background-image: url("../images/carousel2.jpeg");
+    }
+    67%{
+        background-image: url("../images/carousel3.jpeg");
+    }
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7f6;
+    margin-bottom: 15px;
+}
+
+.search .container{
+    width: 90%;
+    display: flex;
+    /* background-color: #8371fd; */
+}
+
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.input input{
+    height: 3rem;
+    width: 80%;
+    font-size: 18px;
+    padding: 0 10px;
+    /* border: 2px solid #474343; */
+    outline: none;
+}
+
+.search-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.search button{
+    /* background-color: white; */
+    background-color: #8371fd;
+    padding: 7px 10px;
+    color: white;
+    margin: 0 0 0 20px;
+    border-radius: 28px;
+    border: none;
+    transition: 0.3s;
+    width: 50%;
+    cursor: pointer;
+    font-size: 20px;
+
+    /* color: #151111; */
+}
+
+.search button:hover{
+    background-color: #5042a8;
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.filter .container{
+    height: 4rem;
+}
+
+.filter .text{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.filter .filters{
+    display: flex;
+    align-items: center;
+}
+
+.filter .filters button{
+    padding: 5px 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    background-color: #8371fd;
+    color: white;
+    border-radius: 10px;
+}
+
+.filter .filters button:hover{
+    background-color: white;
+    color: black;
+    /* padding: 5px 10px; */
+    /* margin: 0 10px; */
+    /* border: 2px solid #8371fd; */
+}
+
+.all-events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 720px;
+}
+
+.all-events .container{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    width: 90%;
+    height: 720px;
+}
+
+.all-events .container .event-card{
+    width: 40%;
+    height: 200px;
+    margin: 15px 0 20px 0;
+    border: 1px solid rgb(194, 182, 182);
+    border-left: 3px solid #FF8C6B;
+    transition: 0.3s;
+    display: flex;
+    background-color: #ebe7e4;
+}
+
+.all-events .container .event-card:hover{
+    border-left: 6px solid #FF8C6B;
+    border-right: 15px solid #FF8C6B;
+    border-top: 1px solid #FF8C6B;
+    border-bottom: 1px solid #FF8C6B;
+}
+
+.all-events .container .event-card .event-image{
+    min-width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-events .container .event-card .event-image img{
+    width: 150px;
+    height: 150px;
+}
+
+.all-events .container .event-card .event-details{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+}
+
+.event-details h2{
+    font-size: 26px;
+    line-height: 1.7rem;
+    font-weight: 100px;
+    margin-left: 10px;
+    height: 50%;
+    padding: 20px 5px;
+}
+
+.event-details .date{
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+    padding-left: 5px;
+    height: 20%;
+}
+
+.event-details ul{
+    height: 30%;
+    padding-left: 5px;
+}
+
+.event-details ul li{
+    margin-left: 10px;
+    display: inline;
+    background-color: rgb(216, 210, 210);
+    padding: 1px 15px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.container-btn{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.all{
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: #FF8C6B;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.all:hover{
     background-color: #e9623c;
 }

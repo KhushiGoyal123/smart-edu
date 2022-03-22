@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './login.css';
 
 import logo from '../images/logo.png';
@@ -8,6 +8,15 @@ import image3 from '../images/image3.png';
 
 
 const Login = () => {
+    const [inputs, setInputs] = useState(false);
+    const [toggle, setToggle] = useState(false);
+    const handleClick = (e) => {
+        setInputs = e.target.value; 
+    }
+
+    const toggle_btn = (e) => {
+       
+    }
 
   return (
       
@@ -73,6 +82,20 @@ const Login = () => {
                         <img src={image1} alt="" className="image img-1 show" />
                         <img src={image2} alt="" className="image img-2" />
                         <img src={image3} alt="" className="image img-3" />
+                    </div>
+                    <div className="text-slider">
+                        <div className="text-wrap">
+                            <div className="text-group">
+                                <h2>Create Your own courses</h2>
+                                <h2>Customize as you like</h2>
+                                <h2>Invite students to your class</h2>
+                            </div>
+                        </div>
+                        <div className="bullets">
+                            <span className="active" data-value="1"></span>
+                            <span data-value="2"></span>
+                            <span data-value="3"></span>
+                        </div>
                     </div>
                     <div className="text-slider">
                         <div className="text-wrap">
