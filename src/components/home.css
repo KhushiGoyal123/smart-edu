@@ -48,6 +48,7 @@ nav {
 }
 
 .container .nav-items{
+    cursor: pointer;
     width: 55%;
     display: flex;
     justify-content: center;
@@ -55,12 +56,14 @@ nav {
 }
 
 .container .nav-items h4 {
+    cursor: pointer;
     font-weight: 400;
     margin: 0 15px 0 0;
     padding: 0 10px;
 }
 
 .container .nav-items h4::after{
+    cursor: pointer;
     content: '';
     width: 0%;
     height: 2px;
@@ -71,10 +74,12 @@ nav {
 }
 
 .container .nav-items h4:hover::after{
+    cursor: pointer;
     width: 100%;
 }
 
 .container .nav-items h4:hover a{
+    cursor: pointer;
     color: #8371fd;
     cursor: pointer;
 }

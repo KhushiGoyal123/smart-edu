@@ -12,7 +12,7 @@ body, input{
     font-family: 'Poppins', sans-serif;
 }
 
-main{
+.main{
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
@@ -75,6 +75,11 @@ form.sign-up-form{
 
 .logo{
     display: flex;
+    text-decoration: none;
+    color: #151111;
+    font-size: 1.3rem;
+    margin-top: -9px;
+    letter-spacing: -0.5px;
     align-items: center;
 }
 
@@ -88,7 +93,17 @@ form.sign-up-form{
     margin-top: -9px;
     letter-spacing: -0.5px;
     color: #151111;
+    text-decoration: none;
 }
+
+.forms-wrap .logolink a{
+    text-decoration: none;
+    color: #151111;
+    font-size: 1.3rem;
+    margin-top: -9px;
+    letter-spacing: -0.5px;
+}
+
 
 .heading h2{
     font-size: 2.1rem;
