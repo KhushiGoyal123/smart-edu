@@ -16,7 +16,7 @@ body, input{
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-    background-image: url('../images/background.jpeg');
+    background-image: linear-gradient(to right bottom, #793ea6, #7538b4, #6d33c3, #612fd3, #4c2de3);
     padding: 2rem;
     display: flex;
     align-items: center;
