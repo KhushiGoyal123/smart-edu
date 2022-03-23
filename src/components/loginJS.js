@@ -7,32 +7,11 @@ const bullets = document.querySelectorAll(".bullets span");
 const images = document.querySelectorAll(".image");
 
 
-// const [inputValues, setInputValues] = useState({
-//     username: '', password: ''
-//   });
-  
-//   const handleOnChange = event => {
-//     const { name, value } = event.target;
-//     setInputValues({ ...inputValues, [name]: value });
-//   };
-
-//   onChange={handleOnChange}
-
 
 const [toggle, setToggle] = useState(false);
 const handleClick = (e) => {
     setInputs = e.target.value; 
 }
-
-useEffect(() => {
-
-}, [toggle_btn]);
-// const toggle_btn = (e) => {
-   
-// } 
-
-
-
 
 inputs.forEach(inp =>{
     inp.addEventListener("focus", () =>{

@@ -48,22 +48,28 @@ nav {
 }
 
 .container .nav-items{
-    cursor: pointer;
     width: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container .nav-items h4 {
-    cursor: pointer;
+.container .nav-items a{
+    text-decoration: none;
+    color: inherit; 
+}
+
+.container .nav-items a h4{
     font-weight: 400;
     margin: 0 15px 0 0;
     padding: 0 10px;
 }
 
+.container .nav-items .active{
+    color: #612fd3;
+}
+
 .container .nav-items h4::after{
-    cursor: pointer;
     content: '';
     width: 0%;
     height: 2px;
@@ -74,12 +80,10 @@ nav {
 }
 
 .container .nav-items h4:hover::after{
-    cursor: pointer;
     width: 100%;
 }
 
-.container .nav-items h4:hover a{
-    cursor: pointer;
+.container .nav-items h4:hover{
     color: #8371fd;
     cursor: pointer;
 }
@@ -461,7 +465,6 @@ footer{
 }
 .footer .first i{
     padding-right: 15px;
-    
 }
 
 .footer .second h3{

@@ -5,7 +5,6 @@ import logo from '../images/logo.png';
 import image1 from '../images/image1.png';
 import image2 from '../images/image2.png';
 import image3 from '../images/image3.png';
-import Home from './home';
 
 const inputs = document.querySelectorAll(".input-field");
 const toggle_btn = document.querySelectorAll(".toggle");
@@ -74,7 +73,7 @@ const Login = () => {
                                 <label>Password</label>
                             </div>
                             <a href='/'>
-                                <input type="submit" value="Sign In" className="sign-btn"/> </a>
+                            <input type="submit" value="Sign In" className="sign-btn"/> </a>
                             <p className="text">Forgot your password or login details? <a href="/">Get Help</a> signing in</p>
                         </div>
                     </form>
@@ -86,7 +85,7 @@ const Login = () => {
                         <div className="heading">
                             <h2>Get Started</h2>
                             <h6>Already have an Account?</h6>
-                            <a href="/" className="toggle">Sign In</a>
+                            <a href="/signin" className="toggle">Sign In</a>
                         </div>
                         <div className="actual-form">
                             <div className="input-wrap">

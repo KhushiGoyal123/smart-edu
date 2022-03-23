@@ -17,15 +17,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import 'font-awesome/css/font-awesome.min.css';
 
 const Home = () => {
-    // const [click, setClick] = useState(true);
-
-    // const gotologin = () => {
-    //    {<Login />}
-    // };
-
-    // const handleClick = e => {
-    //     setClick(e.target.value);
-    // };
+   
     const [searchInput, setSearchInput] = useState('');
 
     const searchItems = (searchValue) => {
@@ -40,12 +32,12 @@ const Home = () => {
                         <h3><a>NEX</a></h3>
                     </div>
                     <div className="nav-items">
-                        <h4>Home</h4>
-                        <h4>Upcoming Events</h4>
-                        <h4>My Events</h4>
-                        <h4>About Us</h4>
-                        <h4>Contact Us</h4>
-                        <h4>Add Event</h4>
+                        <a href="/"><h4>Home</h4> </a>  
+                        <a href="#upcoming"><h4>Upcoming Events</h4></a>
+                        <a href="/calendar"><h4>My Events</h4></a>
+                        <a href="/about"><h4>About Us</h4></a>
+                        <a href="/contact"><h4>Contact Us</h4></a>
+                        <a href="/add-event"><h4>Add Event</h4></a>
                     </div>
                     <div className="sign">
                         <a href="/login">
@@ -89,7 +81,7 @@ const Home = () => {
         </div>
     </div>
 
-    <div className="all-events">
+    <div className="all-events" id="upcoming">
         <div className="container">
             <div className="event-card">
                 <div className="event-image">
