@@ -1,13 +1,22 @@
 import { useEffect } from "react";
 
-// const inputs = document.querySelectorAll(".input-field");
+const inputs = document.querySelectorAll(".input-field");
 const toggle_btn = document.querySelectorAll(".toggle");
 const main = document.querySelector("main");
 const bullets = document.querySelectorAll(".bullets span");
 const images = document.querySelectorAll(".image");
 
 
-const [inputs, setInputs] = useState(document.querySelectorAll(".input-field"));
+// const [inputValues, setInputValues] = useState({
+//     username: '', password: ''
+//   });
+  
+//   const handleOnChange = event => {
+//     const { name, value } = event.target;
+//     setInputValues({ ...inputValues, [name]: value });
+//   };
+
+//   onChange={handleOnChange}
 
 
 const [toggle, setToggle] = useState(false);
@@ -21,6 +30,7 @@ useEffect(() => {
 // const toggle_btn = (e) => {
    
 // } 
+
 
 
 

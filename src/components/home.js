@@ -12,18 +12,25 @@ import img8 from'../images/8.jpeg';
 import img9 from'../images/9.jpeg';
 import img10 from'../images/10.jpeg';
 import Login from './login';
-  
+
+import "bootstrap-icons/font/bootstrap-icons.css";
+import 'font-awesome/css/font-awesome.min.css';
 
 const Home = () => {
-    const [click, setClick] = useState(true);
+    // const [click, setClick] = useState(true);
 
-    const gotologin = () => {
-       {<Login />}
-    };
+    // const gotologin = () => {
+    //    {<Login />}
+    // };
 
-    const handleClick = e => {
-        setClick(e.target.value);
-    };
+    // const handleClick = e => {
+    //     setClick(e.target.value);
+    // };
+    const [searchInput, setSearchInput] = useState('');
+
+    const searchItems = (searchValue) => {
+        setSearchInput(searchValue)
+    }
     return (
         <>
             <nav>
@@ -58,7 +65,7 @@ const Home = () => {
     <div className="search">
         <div className="container">
             <div className="input">
-                <input type="text" placeholder="Search for Events" />
+                <input type="text" placeholder="Search for Events" onChange={(e) => searchItems(e.target.value)}/>
             </div>
             <div className="search-btn">
                 <button>Search</button>
@@ -165,60 +172,60 @@ const Home = () => {
                 </div>
                 </div>
 
-                <div class="container-btn">
-        <button class="all">Watch all events</button>
+                <div className="container-btn">
+        <button className="all">Watch all events</button>
     </div>
 
-    <div class="gradient">
-        <h1 class="text">Featured Events</h1>
-        <div class="gradient-flex">
-            <div class="special-container">
-                <div class="event-card">
-                    <div class="event-image">
+    <div className="gradient">
+        <h1 className="text">Featured Events</h1>
+        <div className="gradient-flex">
+            <div className="special-container">
+                <div className="event-card">
+                    <div className="event-image">
                         <img src={img7} alt="image7" />
                     </div>
-                    <div class="event-details">
+                    <div className="event-details">
                         <h2>Electro Beats - Groove with Beats</h2>
-                        <h4 class="date">Date: 24/3/2022 - 26/3/2022</h4>
+                        <h4 className="date">Date: 24/3/2022 - 26/3/2022</h4>
                         <ul>
                             <li>Offline</li>
                             <li>College Fest</li>
                         </ul>
                     </div>
                 </div>
-                <div class="event-card">
-                    <div class="event-image">
+                <div className="event-card">
+                    <div className="event-image">
                         <img src={img8} alt="image8" />
                     </div>
-                    <div class="event-details">
+                    <div className="event-details">
                         <h2>Business Summit - For MBA Graduates</h2>
-                        <h4 class="date">Date: 24/3/2022 - 26/3/2022</h4>
+                        <h4 className="date">Date: 24/3/2022 - 26/3/2022</h4>
                         <ul>
                             <li>Offline</li>
                             <li>College Fest</li>
                         </ul>
                     </div>
                 </div>
-                <div class="event-card">
-                    <div class="event-image">
+                <div className="event-card">
+                    <div className="event-image">
                         <img src={img9} alt="image9" />
                     </div>
-                    <div class="event-details">
+                    <div className="event-details">
                         <h2>SARAS - For music lovers</h2>
-                        <h4 class="date">Date: 24/3/2022 - 26/3/2022</h4>
+                        <h4 className="date">Date: 24/3/2022 - 26/3/2022</h4>
                         <ul>
                             <li>Offline</li>
                             <li>College Fest</li>
                         </ul>
                     </div>
                 </div>
-                <div class="event-card">
-                    <div class="event-image">
+                <div className="event-card">
+                    <div className="event-image">
                         <img src={img10} alt="image10" />
                     </div>
-                    <div class="event-details">
+                    <div className="event-details">
                         <h2>JU Rhythm 22 - Beats of Imagination</h2>
-                        <h4 class="date">Date: 24/3/2022 - 26/3/2022</h4>
+                        <h4 className="date">Date: 24/3/2022 - 26/3/2022</h4>
                         <ul>
                             <li>Offline</li>
                             <li>College Fest</li>
@@ -228,6 +235,28 @@ const Home = () => {
             </div>
         </div>
     </div>
+    <footer>
+        <div className="footer">
+        <div className="first">
+            <button>NEX</button>
+            <a href="#"><i className="bi bi-twitter"></i></a>
+            <a href="#"><i className="bi bi-instagram"></i></a>
+            <a href="#"><i className="bi bi-facebook"></i></a>
+        </div>
+        <div className="second">
+            <h3>LINKS OF INTEREST</h3>
+            <a href="#"><p>FAQ</p></a>
+            <a href="#"><p>Twitter</p></a>
+            <a href="#"><p>Facebook</p></a>
+            <a href="#"><p>Youtube</p></a>
+        </div>
+        <div className="third">
+            <h3>Copyright Nex.dev &copy; 2022 </h3>
+            <h4>contact@nex.dev</h4>
+        </div>
+        </div>
+    </footer>
+
     <script src="../js/login.js"></script>
         </>
     )

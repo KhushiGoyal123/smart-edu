@@ -423,3 +423,82 @@ nav {
     height: 150px;
     width: 150px;
 }
+
+footer{
+
+    background-color: #FF8C6B;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 70vw;
+    margin: auto;
+    height: 35vh;
+    color: #151111  ;
+}
+
+.footer div {
+    padding: 10px 50px;
+    margin-top: 30px;
+    width: 23vw;
+}
+
+.footer .first button {
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #FF8C6B;
+    border: none;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    padding-bottom: 8px;
+}
+
+.footer .first a{
+    color: #151111;
+}
+.footer .first i{
+    padding-right: 15px;
+    
+}
+
+.footer .second h3{
+    color: #4c2de3;
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+
+.second a{
+    color: white;
+    text-decoration: none;
+}
+
+.second a:hover{
+    /* color: black; */
+    text-decoration: underline;
+}
+
+.footer .second p{
+    padding-bottom: 8px;
+    font-size: 13px;
+}
+
+.footer .third h3{
+    font-size: 17px;
+    font-weight: 300;
+    padding-bottom: 8px;
+    /* color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+}
+
+.footer .third h4{
+    color: black;
+}
+
+.footer .third h4:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}

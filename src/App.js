@@ -13,10 +13,10 @@ function App() {
       { 
       <Router>
       <Switch>
-        <Route exact path="/" element={<Home />}>
+        <Route exact path={["/"]} element={<Home />}>
           <Home />
         </Route>
-        <Route exact path={["/login", "/signup" , "/signin"] } element={<Login />}>
+        <Route exact path={["/login", "/signup"] } element={<Login />}>
           <Login />
         </Route>     
       </Switch>
